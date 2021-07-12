@@ -1,9 +1,12 @@
 # POKEDEX
 
 Nome dos integrantes: 
-- Pessoa 1
-- Pessoa 2
-- Pessoa 3
+- Carlos  
+- Robson
+- Sidney
+- Ederson
+
+Link do figma(wireframe): https://www.figma.com/file/MhPJfOyHmC2lDWpuX28k6q/Pokedex
 
 Link do Surge: www.link.com.br
 
