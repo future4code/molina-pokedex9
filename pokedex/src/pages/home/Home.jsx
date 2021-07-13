@@ -16,18 +16,11 @@ export const Home = () => {
     }
 
     return (
-<<<<<<< HEAD
         <div>
-            Home
             <button onClick={goToPokedex}>POKEDEX</button>
             <button onClick={goToPokemons}>POKEMONS</button>
-
-=======
-        <div>  
-             <Header/>
-             Home
+            <Header/>
             <button onClick={goToPokedex}>IR PARA POKEDEX</button>
->>>>>>> master
         </div>
     )
 } 
