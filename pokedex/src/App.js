@@ -5,8 +5,11 @@ import {ScreenDetailPokemon} from "./pages/screendetail/ScreenDetailPokemon"
 import {ScreenListPokemon} from "./pages/screenlistpokemon/ScreenListPokemon"
 import {Pokedex} from "./pages/screenpokedex/ScreenPokedex"
 
+
 function App() {
   return (
+    
+    
     <BrowserRouter>
       <switch>
        <Route exact path={"/"}>
@@ -22,7 +25,7 @@ function App() {
         <Pokedex/>
        </Route>
       </switch>
-    </BrowserRouter>
+    </BrowserRouter> 
   );
 }
 
