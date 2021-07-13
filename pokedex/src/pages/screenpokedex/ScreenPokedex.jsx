@@ -1,5 +1,9 @@
 import React from "react"
+<<<<<<< HEAD
 import { useHistory } from "react-router-dom"
+=======
+import { Header } from "../../components/header/Header"
+>>>>>>> master
 
 export const Pokedex = () => {
 
@@ -9,6 +13,7 @@ export const Pokedex = () => {
     }
     return (
         <div>
+            <Header/>
             POKEDEX
             <button onClick={goToBack}>VOLTAR</button>
         </div>

@@ -2,6 +2,7 @@ import React from "react"
 import { useHistory } from "react-router-dom"
 import { useEffect, useState } from "react"
 import axios from "axios"
+import { Header } from "../../components/header/Header"
 
 export const ScreenListPokemon = () => {
 
@@ -37,6 +38,7 @@ export const ScreenListPokemon = () => {
         
         <div>
             {/* <p> nome: {newList.name}</p> */}
+                         <Header/>
             LISTA DE POKEMON
             <button onClick={goToBack}>VOLTAR</button>
         </div>
