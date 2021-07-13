@@ -9,10 +9,16 @@ export const Home = () => {
         history.push("/pokedex")
     }
 
+    const goToPokemons = () => {
+        history.push("/list")
+    }
+
     return (
         <div>
             Home
-            <button onClick={goToPokedex}>IR PARA POKEDEX</button>
+            <button onClick={goToPokedex}>POKEDEX</button>
+            <button onClick={goToPokemons}>POKEMONS</button>
+
         </div>
     )
 } 
