@@ -26,6 +26,8 @@ drawClasses =  'sidebar active';
 return(
 <nav className={drawClasses}> 
 <button className="close-btn" onClick={props.click}>X</button>
+<ul className="sidebar-ul-top">
+</ul>
 <ul className="sidebar-ul">
 {
   li.map((objLink, i ) => {
