@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 import './Header.css'
 const li = [
     {
-      link: '/list',
+      link: '/lista',
       text:'Lista de Pokemons'
     },
 {
@@ -63,7 +63,7 @@ const Toolbar = props =>(
 <div>
   <SideDrawBtn  click={props.drawClickHandler}/>
 </div><div className="spacer"></div>
-    <div className="logo"><img src={"https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png"} alt={'Pokedex'}/></div>
+    <div className="logo"><img src={'https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png'} alt={'Pokedex'}/></div>
      
       <div>
         <ul>

@@ -6,7 +6,7 @@ import {ScreenListPokemon} from "./pages/screenlistpokemon/ScreenListPokemon"
 import {Pokedex} from "./pages/screenpokedex/ScreenPokedex"
 
 
-function App() {
+export const App = () => {
   return (
     
     
@@ -18,7 +18,7 @@ function App() {
        <Route exact path={"/detail"}>
           <ScreenDetailPokemon/>
        </Route>
-       <Route exact path={"/list"}> 
+       <Route exact path={"/lista"}> 
         <ScreenListPokemon/>
        </Route>
        <Route exact path={"/pokedex"}>
