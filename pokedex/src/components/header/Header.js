@@ -31,7 +31,7 @@ return(
 <ul className="sidebar-ul">
 {
   li.map((objLink, i ) => {
-    return (<li key={i}><a href={objLink.link}>{objLink.text}</a></li>)
+    return (<li key={i}><Link to={objLink.link}>{objLink.text}</Link></li>)
   })
 }
 </ul>
