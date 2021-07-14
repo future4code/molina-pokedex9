@@ -1,28 +1,40 @@
 import React, { useState } from "react"
 import ReactDOM from 'react-dom';
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import pokemonImg from '/home/cf/Documentos/molina-pokedex9/pokedex/src/images/pokemon.png'
 
 
 import './Header.css'
 const li = [
     {
-      link: '/list',
+      link: '/lista',
       text:'Lista de Pokemons'
     },
 {
       link: '/pokedex',
       text:'Pokedex'
+    },{
+      link:'/',
+      text:'Home'
+    },{
+      link:'/detail',
+      text:'Detalhe'
     }]
 
 
 // this is the sidebar file //
 
+
+
 const SideDraw = props =>{
+  const history = useHistory()
+
 let drawClasses = 'sidebar';
 if(props.show){
 drawClasses =  'sidebar active';
 }
+
+
 return(
 <nav className={drawClasses}> 
 <button className="close-btn" onClick={props.click}>X</button>
@@ -31,7 +43,7 @@ return(
 <ul className="sidebar-ul">
 {
   li.map((objLink, i ) => {
-    return (<li key={i}><a href={objLink.link}>{objLink.text}</a></li>)
+    return (<li onClick={() =>history.push(`${objLink.link}`)} key={i}>{objLink.text}</li>)
   })
 }
 </ul>
@@ -80,7 +92,7 @@ const Toolbar = props =>(
 // which handles the state//
 
 export function Header (){
-
+  
 const [sideDrawOpen,setSideDrawOpen] = useState(false)
 const drawToggleHandler = () =>{
   setSideDrawOpen(!sideDrawOpen)
