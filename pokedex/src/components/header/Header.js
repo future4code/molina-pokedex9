@@ -1,7 +1,13 @@
 import React, { useState } from "react"
+<<<<<<< HEAD
 import { Link } from "react-router-dom"
 import {Routes} from "../../routes/Routes"
 import './Header.css'
+=======
+import ReactDOM from 'react-dom';
+
+import { Link, useHistory } from "react-router-dom";
+>>>>>>> 69fc3b66b4172fe92b500ab323e79683de9cae30
 // import pokemon from "./images/pokemon"
 
 const li = [
@@ -18,6 +24,10 @@ const li = [
 // this is the sidebar file //
 
 const SideDraw = props =>{
+<<<<<<< HEAD
+=======
+ const history = useHistory()
+>>>>>>> 69fc3b66b4172fe92b500ab323e79683de9cae30
 
 let drawClasses = 'sidebar';
 if(props.show){
@@ -34,8 +44,12 @@ return(
 <ul className="sidebar-ul">
 {
   li.map((objLink, i ) => {
+<<<<<<< HEAD
     return (<li key={i}><Link to={objLink.link}>{objLink.text}</Link></li>
     )
+=======
+    return (<li key={i} onClick={() => history.push(objLink.link)} >{objLink.text}</li>)
+>>>>>>> 69fc3b66b4172fe92b500ab323e79683de9cae30
   })
 }
 
@@ -109,4 +123,5 @@ return(
 
 </div>
 )
+
 }
