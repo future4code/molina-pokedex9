@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, useHistory } from "react-router-dom"
+import Footer from "./components/Footer/Footer";
 import {Home} from "./pages/home/Home"
 import {ScreenDetailPokemon} from "./pages/screendetail/ScreenDetailPokemon"
 import {ScreenListPokemon} from "./pages/screenlistpokemon/ScreenListPokemon"
@@ -23,9 +24,9 @@ export const App = () => {
        </Route>
        <Route exact path={"/pokedex"}>
         <Pokedex/>
-       </Route>
-      </switch>
-    </BrowserRouter> 
+       </Route>       
+      </switch>      
+    </BrowserRouter>    
   );
 }
 
