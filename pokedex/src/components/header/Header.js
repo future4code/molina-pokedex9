@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import ReactDOM from 'react-dom';
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 // import pokemon from "./images/pokemon"
 
 
@@ -19,6 +19,7 @@ const li = [
 // this is the sidebar file //
 
 const SideDraw = props =>{
+ const history = useHistory()
 let drawClasses = 'sidebar';
 if(props.show){
 drawClasses =  'sidebar active';
@@ -31,7 +32,7 @@ return(
 <ul className="sidebar-ul">
 {
   li.map((objLink, i ) => {
-    return (<li key={i}><Link to={objLink.link}>{objLink.text}</Link></li>)
+    return (<li key={i} onClick={() => history.push(objLink.link)} >{objLink.text}</li>)
   })
 }
 </ul>
