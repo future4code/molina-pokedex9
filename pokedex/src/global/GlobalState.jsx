@@ -16,10 +16,12 @@ export const GlobalState = () => {
       })
     }
 
-    return(
-        <div>
+    const data = {Pokemon, setPokemon, GetPokemons}
 
-        </div>
+    return(
+      <GlobalStateContext.Provider value={data}>
+
+        </GlobalStateContext.Provider>
     )
 }
 

@@ -1,16 +1,15 @@
 import React, {useState} from "react";
 import {HomePage} from "./pages/homepage/HomePage"
 import { Header } from "./components/header/Header";
+import { Routes } from "./routes/Routes";
+import { GlobalState } from "./global/GlobalState";
 
 export const App = () => {
 
   
   return (
     <div>
-      <Header/>
-      <p>Ola</p>
-      <HomePage/>
-      
+      <Routes/>
     </div>  
   
   );

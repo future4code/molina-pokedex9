@@ -1,12 +1,9 @@
 import React, { useState } from "react"
-import ReactDOM from 'react-dom';
-import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom"
 import {Routes} from "../../routes/Routes"
-
+import './Header.css'
 // import pokemon from "./images/pokemon"
 
-
-import './Header.css'
 const li = [
     {
       link: '/lista',
@@ -21,11 +18,6 @@ const li = [
 // this is the sidebar file //
 
 const SideDraw = props =>{
- const history = useHistory()
-
-  const GoToPokedex = () => {
-    history.push("/pokedex")
-  }
 
 let drawClasses = 'sidebar';
 if(props.show){
@@ -42,7 +34,8 @@ return(
 <ul className="sidebar-ul">
 {
   li.map((objLink, i ) => {
-    return (<button onClick={GoToPokedex}>Pokedex</button>)
+    return (<li key={i}><Link to={objLink.link}>{objLink.text}</Link></li>
+    )
   })
 }
 
