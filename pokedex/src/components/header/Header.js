@@ -4,6 +4,7 @@ import { Link, useHistory } from "react-router-dom";
 import pokemonImg from '/home/cf/Documentos/molina-pokedex9/pokedex/src/images/pokemon.png'
 
 
+
 import './Header.css'
 const li = [
     {
@@ -44,6 +45,7 @@ return(
 {
   li.map((objLink, i ) => {
     return (<li onClick={() =>history.push(`${objLink.link}`)} key={i}>{objLink.text}</li>)
+
   })
 }
 </ul>
@@ -77,7 +79,7 @@ const Toolbar = props =>(
 <div>
   <SideDrawBtn  click={props.drawClickHandler}/>
 </div><div className="spacer"></div>
-    <div className="logo"><img src={pokemonImg} alt={'Pokedex'}/></div>
+    <div className="logo"><img src={'https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png'} alt={'Pokedex'}/></div>
      
       <div>
         <ul>
