@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import ReactDOM from 'react-dom';
+
 import { Link, useHistory } from "react-router-dom";
 // import pokemon from "./images/pokemon"
 
@@ -20,10 +21,14 @@ const li = [
 
 const SideDraw = props =>{
  const history = useHistory()
+
 let drawClasses = 'sidebar';
 if(props.show){
 drawClasses =  'sidebar active';
 }
+
+
+
 return(
 <nav className={drawClasses}> 
 <button className="close-btn" onClick={props.click}>X</button>
@@ -35,6 +40,7 @@ return(
     return (<li key={i} onClick={() => history.push(objLink.link)} >{objLink.text}</li>)
   })
 }
+
 </ul>
 </nav>
 ) 
@@ -105,4 +111,5 @@ return(
 
 </div>
 )
+
 }
