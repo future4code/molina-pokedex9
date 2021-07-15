@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useState } from "react"
 import ReactDOM from 'react-dom';
-import { Link } from "react-router-dom";
+
+import { Link, useHistory } from "react-router-dom";
 // import pokemon from "./images/pokemon"
 
 
@@ -19,10 +20,15 @@ const li = [
 // this is the sidebar file //
 
 const SideDraw = props =>{
+ const history = useHistory()
+
 let drawClasses = 'sidebar';
 if(props.show){
 drawClasses =  'sidebar active';
 }
+
+
+
 return(
 <nav className={drawClasses}> 
 <button className="close-btn" onClick={props.click}>X</button>
@@ -31,9 +37,10 @@ return(
 <ul className="sidebar-ul">
 {
   li.map((objLink, i ) => {
-    return (<li key={i}><Link to={objLink.link}>{objLink.text}</Link></li>)
+    return (<li key={i} onClick={() => history.push(objLink.link)} >{objLink.text}</li>)
   })
 }
+
 </ul>
 </nav>
 ) 
@@ -79,34 +86,30 @@ const Toolbar = props =>(
 // main app file //
 // which handles the state//
 
-export class Header extends React.Component{
-state = {
-sideDrawOpen : false,
-};
-drawToggleHandler = () =>{
-this.setState((prevState) => {
-return{sideDrawOpen: !prevState.sideDrawOpen};  
-});
+export function Header (){
+
+const [sideDrawOpen,setSideDrawOpen] = useState(false)
+const drawToggleHandler = () =>{
+  setSideDrawOpen(!sideDrawOpen)
 };
 
-backDropClickHandler = () =>{
-this.setState({sideDrawOpen: false});
+const backDropClickHandler = () =>{
+  setSideDrawOpen(false);
 }
 
-render(){
 let backDrop;
 
-if(this.state.sideDrawOpen){
+if(sideDrawOpen){
 backDrop = <BackDrop />;
 }
 return(
 <div style={{height:'100%'}}>
-  <Toolbar drawClickHandler={this.drawToggleHandler} /> 
- <SideDraw click={this.backDropClickHandler} show={this.state.sideDrawOpen} />
+  <Toolbar drawClickHandler={drawToggleHandler} /> 
+ <SideDraw click={backDropClickHandler} show={sideDrawOpen} />
  {backDrop}
   <main></main>
 
 </div>
 )
-}
+
 }

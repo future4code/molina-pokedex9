@@ -1,5 +1,4 @@
 import React from "react"
-import { useHistory } from "react-router-dom"
 import { Header } from "../../components/header/Header"
 import styled from "styled-components"
 
@@ -15,17 +14,17 @@ margin-left: 45vw;
 color: red;
 `
 
-export const Pokedex = () => {
+export const PokedexPage = () => {
 
-    const history = useHistory()
-    const goToBack = () => {
-        history.push("/")
-    }
+    // const history = useHistory()
+    // const goToBack = () => {
+    //     history.push("/")
+    // }
     return (
         <div>
-            <Header/>
+            
             <NamePokedex>POKEDEX</NamePokedex>
-            <BotaoVoltar onClick={goToBack}>VOLTAR</BotaoVoltar>
+            <BotaoVoltar>VOLTAR</BotaoVoltar>
         </div>
     )
 }

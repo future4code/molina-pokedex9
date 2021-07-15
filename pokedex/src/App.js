@@ -1,3 +1,4 @@
+
 import React from "react";
 import { BrowserRouter, Route, useHistory } from "react-router-dom"
 import Footer from "./components/Footer/Footer";
@@ -5,11 +6,15 @@ import {Home} from "./pages/home/Home"
 import {ScreenDetailPokemon} from "./pages/screendetail/ScreenDetailPokemon"
 import {ScreenListPokemon} from "./pages/screenlistpokemon/ScreenListPokemon"
 import {Pokedex} from "./pages/screenpokedex/ScreenPokedex"
+import React, {useState} from "react";
+import {HomePage} from "./pages/homepage/HomePage"
+import { Header } from "./components/header/Header";
 
 
 export const App = () => {
+
+  
   return (
-    
     
     <BrowserRouter>
       <switch>
@@ -27,6 +32,12 @@ export const App = () => {
        </Route>       
       </switch>      
     </BrowserRouter>    
+      <div>
+        <Header/>
+        <p>Ola</p>
+        <HomePage/>
+      
+      </div>  
   );
 }
 
