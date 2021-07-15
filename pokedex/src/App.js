@@ -12,11 +12,7 @@ export const App = () => {
   
   return (
   <div>
-      
         <Routes/>
-        
-       
-        
   </div>  
   );
 }

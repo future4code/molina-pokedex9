@@ -14,7 +14,11 @@ const li = [
 {
       link: '/pokedex',
       text:'Pokedex'
-    }]
+    },
+{
+  link: '/',
+  text: 'home'
+}]
 
 
 // this is the sidebar file //

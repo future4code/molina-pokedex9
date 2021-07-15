@@ -22,10 +22,10 @@ export const Title = styled.h1`
 export const FooterContainer = styled.div`
   display: flex;  
   align-items: center;
-  height: 10vh;  
+  height: 8vh;
   justify-content: center;
   background-color: #CF1834;  
-  margin-top: 90vh ;
+  margin-top: 73.7vh;
 `;
 
 export const img = styled.img`

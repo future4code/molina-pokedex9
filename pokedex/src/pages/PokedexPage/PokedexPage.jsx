@@ -1,5 +1,6 @@
 import React from "react"
 import { Header } from "../../components/header/Header"
+import Footer from "../../components/Footer/Footer"
 import styled from "styled-components"
 
 const BotaoVoltar = styled.button `
@@ -22,9 +23,11 @@ export const PokedexPage = () => {
     // }
     return (
         <div>
-            
+            <Header/>
             <NamePokedex>POKEDEX</NamePokedex>
-            <BotaoVoltar>VOLTAR</BotaoVoltar>
+
+            <Footer/>
+
         </div>
     )
 }
