@@ -1,10 +1,10 @@
 import React from 'react'
 import { SocialMidia, Facebook, DivRedesSociais, Twitter, Instagram, IconSocial, Title, FooterContainer, Direitos, Text } from './styled'
-import { Link } from 'react-router-dom'
 
 
 
-const Footer = () => {
+
+export const FooterDaHome = () => {
     return (
         <FooterContainer>
             <SocialMidia>
@@ -37,5 +37,3 @@ const Footer = () => {
         </FooterContainer>
     )
 }
-
-export default Footer
