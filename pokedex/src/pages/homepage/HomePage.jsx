@@ -2,6 +2,8 @@ import React from "react"
 import {Header} from '../../components/header/Header'
 import { FooterDaHome } from "../../components/footerDaHome/FooterDaHome"
 
+
+
 export const HomePage = () => {
 //     const history = useHistory()
 
@@ -17,6 +19,7 @@ export const HomePage = () => {
     return (
         <div>
             <Header/>
+
             <FooterDaHome/>
         </div>
     )
