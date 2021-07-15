@@ -19,7 +19,7 @@ export const HomePage = () => {
     return (
         <div>
             <Header/>
-
+            <p>oi</p>
             <FooterDaHome/>
         </div>
     )
