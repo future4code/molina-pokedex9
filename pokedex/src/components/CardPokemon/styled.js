@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 
 export const CardPokemonContainer = styled.div`
-  height: 35vh;
-  width: 250px;
+  height: 25vh;
+  width: 25vh;
   margin: 10px;
   display: grid;
   grid-template-rows: 90% 10%;
@@ -18,7 +18,7 @@ export const ImgContainer = styled.div`
 `;
 
 export const PokemonImg = styled.img`
-  height: 100%;
+  height: 70%;
 `;
 
 export const ButtonsContainer = styled.div`

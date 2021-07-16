@@ -21,8 +21,9 @@ export const Title = styled.h1`
 
 export const FooterContainer = styled.div`
   display: flex;  
-  align-items: center;
-  height: 8vh;
+  height: 13vh;
+  position: relative;
+  top:220px;
   justify-content: center;
   background-color: #CF1834;  
   margin-top: 73.7vh;
