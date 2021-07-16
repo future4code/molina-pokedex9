@@ -1,5 +1,7 @@
 import React from "react"
 import {Header} from '../../components/header/Header'
+import { Router } from "../../routes/Router"
+
 import { FooterDaHome } from "../../components/footerDaHome/FooterDaHome"
 
 

@@ -1,19 +1,16 @@
 
 import React from "react";
-import Footer from "./components/Footer/Footer";
-// import {Home} from "./pages/home/Home"
-import { Header } from "./components/header/Header";
-import { HomePage } from "./pages/homepage/HomePage";
-import { Routes } from "./routes/Routes";
+import { Router } from "./routes/Router";
+import GlobalState from './global/GlobalState';
 
 
-export const App = () => {
+const App = () => {
 
-  
   return (
-  <div>
-        <Routes/>
-  </div>  
+    <GlobalState>
+      <Router />
+    </GlobalState>
+
   );
 }
 

@@ -8,10 +8,14 @@ import { Link, useHistory } from "react-router-dom";
 import './Header.css'
 const li = [
     {
+      link: '/',
+      text:'Home'
+    },
+    {
       link: '/lista',
       text:'Lista de Pokemons'
     },
-{
+    {
       link: '/pokedex',
       text:'Pokedex'
     },
