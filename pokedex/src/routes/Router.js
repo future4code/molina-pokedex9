@@ -5,7 +5,7 @@ import { PokedexPage } from "../pages/PokedexPage/PokedexPage";
 import { DetailPage } from "../pages/detailpage/DetailPage";
 import {HomePage} from "../pages/homepage/HomePage"
 
-export const Routes = () => {
+export const Router = () => {
   return (
     <BrowserRouter>
       <Switch>
