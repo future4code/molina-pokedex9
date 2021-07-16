@@ -8,7 +8,7 @@ Nome dos integrantes:
 
 Link do figma(wireframe): https://www.figma.com/file/MhPJfOyHmC2lDWpuX28k6q/Pokedex
 
-Link do Surge: www.link.com.br
+Link do Surge: www.labenu-pokedex.surge.sh
 
 O que funciona:
 - Item 1
