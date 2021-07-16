@@ -7,6 +7,7 @@ import Footer from "../../components/Footer/Footer"
 
 
 
+
 export const PokedexPage = () => {
     const { pokedex } = useContext(GlobalStateContext)    
     
@@ -19,6 +20,7 @@ export const PokedexPage = () => {
             })}
             </ PokeList>
             <Footer/>
+
         </div>
     )
 }

@@ -32,6 +32,7 @@ const Footer = () => {
                     <Facebook src={"http://nicepokedex.surge.sh/static/media/squirtle-baby.e2a97043.png"}/>
                     <Instagram src={'http://nicepokedex.surge.sh/static/media/bulbasaur-basy.1255fab3.png'}/>
                 </DivRedesSociais>     */}
+
                 </Direitos>
             </SocialMidia>
         </FooterContainer>

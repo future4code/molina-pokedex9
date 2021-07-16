@@ -18,7 +18,11 @@ const li = [
     {
       link: '/pokedex',
       text:'Pokedex'
-    }]
+    },
+{
+  link: '/',
+  text: 'home'
+}]
 
 
 // this is the sidebar file //
@@ -76,7 +80,7 @@ const Toolbar = props =>(
 <div>
   <SideDrawBtn  click={props.drawClickHandler}/>
 </div><div className="spacer"></div>
-    <div className="logo"><img src={'https://logosmarcas.net/wp-content/uploads/2020/05/Pokemon-Logo.png'} alt={'Pokedex'}/></div>
+    <div className="logo"><img src={'http://nicepokedex.surge.sh/static/media/logo.7ded5dbc.png'} alt={'Pokedex'}/></div>
      
       <div>
         <ul>

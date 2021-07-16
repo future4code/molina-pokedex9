@@ -20,6 +20,7 @@ export const ListPage = () => {
             </ListContainer>
             <Footer/>
         </>
+
     )
 }
 
