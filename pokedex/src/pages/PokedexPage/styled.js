@@ -6,4 +6,7 @@ export const PokeList = styled.main`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  background: #cf1834;
+  margin: 0;
+  margin-top: -20px;
 `;
